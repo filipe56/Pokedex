@@ -1,0 +1,19 @@
+import React from 'react';
+import {
+  View,
+  StatusBar
+} from 'react-native';
+import Routes from "./routes";
+import { NavigationContainer } from "@react-navigation/native";
+
+console.disableYellowBox = true;
+const App = () => (
+  <NavigationContainer>
+    <StatusBar barStyle="light-content"/>
+    <View style={{backgroundColor: '#312e38', flex:1}}>
+      <Routes />
+    </View>
+  </NavigationContainer>
+);
+
+export default App 
